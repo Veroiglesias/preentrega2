@@ -28,11 +28,11 @@ function repuestosService() {
       .map(
         (item, index) => `
                           <div class="cart-item">
-                            <img src="${item.imageUrl}" style="width: 400px; height: 200px;">
-                            <h2 class="text-4xl font-mono">${item.titulo}</h2>
+                            <img src="${item.imageUrl}" style="width: 200px; height: 200px;">
+                            <h2 class="text-4xl font-sans">${item.titulo}</h2>
                             <p class="text-sm mb-2">${item.precio}</p>
                             <button onclick="sacarService(${index})" 
-                                    class="mb-4 px-6 bg-gray-800 remove-btn rounded font-mono" >
+                                    class="mb-4 px-6 bg-gray-800 remove-btn rounded font-sans" >
                               Remover
                             </button>
                           </div>
@@ -50,10 +50,10 @@ function sacarService(index) {
 repuestos.forEach((item) => {
   const articulos = `
                       <article class="px-8 py-2 text-center border-b-4 border-black">
-                        <h2 class="text-4xl font-mono">${item.titulo}</h2>
+                        <h2 class="text-4xl font-sans">${item.titulo}</h2>
                         <p class="text-sm mb-2 mt-2">${item.descripcion}</p>
-                        <img src="${item.imageUrl}" class="mb-2 rounded-lg border-2 border-stone-800" />
-                        <p class="text-sm mb-2">${item.precio}</p>
+                        <img src="${item.imageUrl}" style="width: 500px; height: 500px class="mb-2 rounded-lg border-2 border-stone-800" />
+                        <p class="text-2xl mb-2 mt-2">${item.precio}</p>
                         <button class="py-2 px-6 font-bold rounded hover:bg-gray-800 agregar-btn">Agregar</button>
                       </article>
                     `;
