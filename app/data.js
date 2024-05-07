@@ -1,4 +1,4 @@
-const myData = [
+const repuestos = [
   {
     titulo: "Ipone 10w40",
     imageUrl: "assets/img/image1.jpg",
@@ -14,7 +14,7 @@ const myData = [
     precio: "$25000",
   },
   {
-    titulo: "Kit de limpieza de cadena Ipone",
+    titulo: "Kit de cadena Ipone",
     imageUrl: "assets/img/image3.jpg",
     descripcion: "Lubricante, desengrasante y cepillo",
     precio: "$40000",
